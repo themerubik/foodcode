@@ -1,0 +1,1754 @@
+/* 
+------------------
+Template Name: FoodCode HTMl Resturent Template
+Author: rasourav01
+Author Email: rasourav01@gmail.com
+Version: 1.00
+------------------
+
+----------------
+Table of Content
+----------------
+1.back-to-top css
+2.preloader css
+3.navbar css
+4.bannar css
+5.about css
+6.chefs css
+7.counterup css
+8.menu css
+9.gallery css
+10.blog css
+12.subscribe css
+12.reservation css
+13.testimonial css
+14.footer css
+15.copy right css
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: .5px;
+    color: #29272e;
+    line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+/*=========================
+back-to-top CSS starts
+==========================*/
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #29272e;
+    width: 40px;
+    height: 40px;
+    line-height: 37px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+#return-to-top:hover {
+    background: #ecb235;
+}
+
+/*=========================
+   preloader CSS starts
+==========================*/
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 9999;
+    height: 100%;
+}
+
+#status {
+    width: 250px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url(../images/loader-2_food.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+}
+
+/************************
+ * navbar css start here
+ ************************/
+
+nav.navbar-fixed {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    background: #29272e;
+}
+
+nav.navbar-fixed .nav-item .nav-link {
+    line-height: 60px;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #ecb235;
+    position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link.active::after {
+    position: absolute;
+    content: '';
+    bottom: 15px;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    background: #ecb235;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #ecb235;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 28px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #ecb235;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+    padding: 0 !important;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    position: relative;
+    color: #fff;
+    line-height: 80px;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 20px;
+    cursor: pointer;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.navbar-light .navbar-nav .nav-link::after {
+    position: absolute;
+    content: '';
+    bottom: 15px;
+    left: 50%;
+    width: 0px;
+    height: 2px;
+    background: #ecb235;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ecb235;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after {
+    width: 20px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+    color: #ecb235;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown .dropdown-menu {
+    transition: all .3s;
+    visibility: hidden;
+    display: block;
+    padding: 10px;
+    background: #fff;
+    margin-top: 20px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus .dropdown-menu {
+    visibility: visible;
+    display: block;
+    padding: 10px;
+    margin-top: 0;
+    background: #fff;
+}
+
+.dropdown-item {
+    color: #1f1f1f;
+    padding: 6px 50px 5px 10px;
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: 1.6px;
+    font-weight: 500;
+}
+
+.dropdown-item:hover {
+    background: none;
+    color: #ecb235;
+
+}
+
+/*****************************
+ * bannar CSS START HERE
+ *****************************/
+
+#bannar {
+    position: relative;
+}
+
+#bannar .slider .slider-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.50);
+    z-index: 2;
+}
+
+.bannar_info {
+    width: 60%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.bannar_info h2 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 50px;
+    font-family: 'Kaushan Script', cursive;
+    text-transform: capitalize;
+}
+
+.bannar_info h1 {
+    color: #fff;
+    font-weight: 400;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.bannar_info p {
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+    font-style: italic;
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 1.6px;
+    padding-bottom: 35px;
+}
+
+.bannar_info .bnr_btn a {
+    color: #fff;
+    padding: 5px 30px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    border: 2px solid #ecb235;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.bannar_info .bnr_btn a:hover {
+    background: #ecb235;
+    border: 2px solid #ecb235;
+}
+
+.bnr_social_icon {
+    position: absolute;
+    top: 50%;
+    right: -15%;
+}
+
+.bnr_social_icon ul {
+    position: relative;
+}
+
+.bnr_social_icon ul li {
+    list-style: none;
+    padding-bottom: 8px;
+}
+
+.bnr_social_icon ul::after {
+    position: absolute;
+    content: '';
+    top: -120%;
+    left: 6px;
+    width: 1px;
+    height: 80px;
+    background: #fff;
+}
+
+.bnr_social_icon ul::before {
+    position: absolute;
+    content: '';
+    bottom: -110%;
+    left: 6px;
+    width: 1px;
+    height: 80px;
+    background: #fff;
+}
+
+.bnr_social_icon ul li a {
+    color: #fff;
+    font-size: 16px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.bnr_social_icon ul li a:hover {
+    color: #ecb235;
+}
+
+/*****************************
+ * about CSS START HERE
+ *****************************/
+
+#about {
+    overflow: hidden;
+}
+
+.about_right_wrap_one {
+    min-height: 720px;
+    width: 100%;
+    position: relative;
+}
+
+.about_left_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.about_left_img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.about_left_img {
+    background: url(../images/bg-burger.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about_content_wrap {
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 135px;
+    padding-right: 90px;
+}
+
+.about_container {
+    width: 70%;
+    position: relative;
+}
+
+.about_content_inner h5 {
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #ecb235;
+    font-family: 'Kaushan Script', cursive;
+    padding-bottom: 15px;
+}
+
+.about_content_inner h4 {
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #29272e;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.about_content_inner h4::after {
+    position: absolute;
+    top: 14px;
+    left: 114%;
+    content: '';
+    width: 80px;
+    height: 1px;
+    background: #ecb235;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    border-radius: 100%;
+}
+
+.about_content_inner h4:before {
+    position: absolute;
+    top: 14px;
+    right: 114%;
+    content: '';
+    width: 80px;
+    height: 1px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    border-radius: 100%;
+    background: #ecb235;
+}
+
+.about_content_inner p {
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+/*****************************
+ * chefs CSS START HERE
+ *****************************/
+
+.chefs_info {
+    padding-top: 18%;
+}
+
+.chefs_info h5 {
+    font-size: 26px;
+    font-family: 'Kaushan Script', cursive;
+    text-transform: capitalize;
+    color: #ecb235;
+}
+
+.chefs_info h4 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #1f1f1f;
+    letter-spacing: 1px;
+    padding-top: 12px;
+    padding-bottom: 20px
+}
+
+.chefs_info p {
+    padding: 0 60px;
+}
+
+#chefs .owl-carousel button.owl-dot {
+    width: 100px;
+    height: 100px;
+    background: url(../images/about-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 5px;
+    outline: 0;
+    position: relative;
+}
+
+#chefs .owl-carousel button.owl-dot:nth-child(1) {
+    background: url(../images/chef-making-ok-sign-over-white-background_1368-2804.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#chefs .owl-carousel button.owl-dot:nth-child(2) {
+    background: url(../images/chef-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#chefs .owl-carousel button.owl-dot:nth-child(3) {
+    background: url(../images/chef-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#chefs .owl-carousel button.owl-dot:nth-child(4) {
+    background: url(../images/chef-5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#chefs .owl-carousel button.owl-dot.active {
+    position: relative;
+}
+
+#chefs .owl-carousel button.owl-dot.active:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.50)
+}
+
+#chefs .owl-dots {
+    position: absolute;
+    bottom: 16%;
+    right: 6%;
+}
+
+/*****************************
+ * counterup CSS START HERE
+ *****************************/
+
+#counterup {
+    padding: 70px 0;
+    background: url(../images/counter-up.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.counter_ovarlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(236, 178, 53, 0.93);
+}
+
+.counterup_single_item {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.counterup_single_item span {
+    font-size: 40px;
+}
+
+/*****************************
+ * menu CSS START HERE
+ *****************************/
+
+.menu_header h5 {
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #ecb235;
+    font-family: 'Kaushan Script', cursive;
+    padding-bottom: 15px;
+}
+
+.menu_header h4 {
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #29272e;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.menu_header h4::before {
+    position: absolute;
+    top: 14px;
+    right: 108%;
+    content: '';
+    width: 80px;
+    height: 1px;
+    border-radius: 100%;
+    background: #ecb235;
+}
+
+.menu_header h4::after {
+    position: absolute;
+    top: 14px;
+    left: 108%;
+    content: '';
+    width: 80px;
+    height: 1px;
+    border-radius: 100%;
+    background: #ecb235;
+}
+
+#menu {
+    padding: 70px 0;
+}
+
+#myTab {
+    margin: 10px 0 60px 0;
+}
+
+.menu_wraper ul {
+    display: block;
+}
+
+.menu_wraper ul li {
+    display: inline-block;
+}
+
+.menu_wraper .nav-tabs {
+    border: 0;
+}
+
+.menu_wraper .nav-tabs .nav-link {
+    border: 0;
+    color: #000;
+    position: relative;
+}
+
+.menu_wraper .nav-tabs .nav-link i {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.menu_wraper .nav-tabs .nav-link:hover i {
+    color: #ecb235;
+}
+
+.menu_wraper .nav-tabs .nav-link::after {
+    transition: all 0.4s;
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 0px;
+    height: 2px;
+    background: #ecb235;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.menu_wraper .nav-tabs .nav-link:hover::after {
+    width: 30px;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    position: relative;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active::after {
+    transition: all 0.4s;
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    background: #ecb235;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active i {
+    color: #ecb235;
+}
+
+.menu_wraper .nav-tabs .nav-link p {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #000;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.menu_info {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid#eeeeee;
+    background: #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.menu_info:hover {
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.menu_info .menu_img {
+    padding-right: 20px;
+}
+
+.menu_content h5 {
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ecb235;
+    font-weight: 600;
+    padding-bottom: 5px;
+    padding-top: 21px;
+    position: relative;
+}
+
+.menu_content h5 span {
+    position: absolute;
+    top: 21px;
+    right: 21px;
+}
+
+.menu_content p {
+    font-size: 14px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding-right: 50px;
+}
+
+.menu_img img {
+    width: 150px;
+    height: 110px;
+}
+
+/*****************************
+ * gallery CSS START HERE
+ *****************************/
+
+#gallery {
+    padding: 70px 0;
+}
+
+.gallery_header h5 {
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #ecb235;
+    font-family: 'Kaushan Script', cursive;
+    padding-bottom: 15px;
+}
+
+.gallery_header h4 {
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #29272e;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.gallery_header h4::before {
+    position: absolute;
+    top: 14px;
+    right: 108%;
+    content: '';
+    width: 80px;
+    height: 1px;
+    border-radius: 100%;
+    background: #ecb235;
+}
+
+.gallery_header h4::after {
+    position: absolute;
+    top: 14px;
+    left: 108%;
+    content: '';
+    width: 80px;
+    height: 1px;
+    border-radius: 100%;
+    background: #ecb235;
+}
+
+.gallery_inner {
+    position: relative;
+}
+
+.gl_hover_details {
+    position: absolute;
+    width: 100%;
+    visibility: visible;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.66);
+    top: 100%;
+    left: 100%;
+    color: #fff;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+.gl_hover_info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery_inner {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery_inner:hover .gl_hover_details {
+    visibility: visible;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gl_hover_info h4 {
+    font-size: 26px;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    letter-spacing: .5px;
+    color: #ecb235;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.gl_hover_info h5 {
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    padding-bottom: 8px;
+}
+
+.gl_hover_info a i {
+    color: #fff;
+    font-size: 26px;
+}
+
+/*****************************
+ * blog CSS START HERE
+ *****************************/
+
+#blog {
+    padding: 70px 0;
+}
+
+.blog_header h5 {
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #ecb235;
+    font-family: 'Kaushan Script', cursive;
+    padding-bottom: 15px;
+}
+
+.blog_header h4 {
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #29272e;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.blog_header h4::before {
+    position: absolute;
+    top: 14px;
+    right: 108%;
+    content: '';
+    width: 80px;
+    height: 1px;
+    border-radius: 100%;
+    background: #ecb235;
+}
+
+.blog_header h4::after {
+    position: absolute;
+    top: 14px;
+    left: 108%;
+    content: '';
+    width: 80px;
+    height: 1px;
+    border-radius: 100%;
+    background: #ecb235;
+}
+
+.blog_slider .owl-nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#blog .owl-carousel .owl-nav button.owl-prev {
+    color: #fff;
+    font-size: 23px;
+    width: 30px;
+    height: 28px;
+    line-height: 15px;
+    background: #29272e;
+    margin-right: 10px;
+    outline: 0;
+    border-radius: 3px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+#blog .owl-carousel .owl-nav button.owl-prev:hover {
+    background: #ecb235;
+    color: #fff;
+}
+
+#blog .owl-carousel .owl-nav button.owl-next {
+    color: #fff;
+    font-size: 23px;
+    width: 30px;
+    height: 28px;
+    line-height: 15px;
+    background: #29272e;
+    outline: 0;
+    border-radius: 3px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+#blog .owl-carousel .owl-nav button.owl-next:hover {
+    background: #ecb235;
+    color: #fff;
+}
+
+.blog_item .blog_text {
+    padding: 5px 15px 30px 15px;
+    position: relative;
+    border: 1px solid #eee;
+}
+
+.blog_item .blog_text h5 {
+    font-size: 18px;
+    font-family: 'Kaushan Script', cursive;
+    text-transform: capitalize;
+    padding: 20px 0 10px 0;
+}
+
+.blog_item .blog_text h5 a {
+    color: #ecb235;
+}
+
+.blog_item .blog_text h6 {
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 0px 0 10px 0;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.blog_item .blog_text h6 a {
+    color: #ecb235;
+}
+
+.blog_admin_info p {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    color: #1f1f1f;
+}
+
+.blog_admin_info p a {
+    font-weight: 400;
+}
+
+.blog_admin_info p a {
+    color: #1f1f1f;
+}
+
+.event_info {
+    color: #fff;
+    background: #29272e;
+    position: absolute;
+    padding: 15px;
+    top: -100px;
+    right: 15px;
+    font-family: 'Kaushan Script', cursive;
+    text-transform: capitalize;
+}
+
+.event_info h4 {
+    font-size: 22px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.event_info span a {
+    color: #fff;
+}
+
+.event_info h4::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    background: #ecb235;
+    width: 20px;
+    height: 1px;
+}
+
+.blog_item_img {
+    position: relative;
+    overflow: hidden;
+}
+
+.blog_ovarlay {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.blog_item img {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.blog_item:hover img {
+    transform: scale(1.2);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.blog_item:hover .blog_ovarlay {
+    opacity: 1;
+}
+
+/*****************************
+ * subscribe CSS START HERE
+ *****************************/
+
+#news_letter {
+    background: #1f1f1f;
+    padding: 70px 0;
+    position: relative;
+}
+
+.newsletter_text h4 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 700;
+    padding-bottom: 6px;
+}
+
+.newsletter_text p {
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    font-size: 18px;
+}
+
+.newsletter_text span {
+    color: #ecb235;
+}
+
+.newsletter_mail {
+    padding-top: 11px;
+}
+
+.newsletter_mail form {
+    background: #fff;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.newsletter_mail form input,
+.newsletter_mail form button {
+    background: none;
+    border: none;
+}
+
+.newsletter_mail form input[type="email"] {
+    width: calc(100% - 120px);
+    padding: 12px;
+    float: left;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+}
+
+.newsletter_mail form button {
+    width: 120px;
+    height: 100%;
+    padding: 12px;
+    background: #ecb235;
+    float: left;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: border-color 0.3s, color 0.3s;
+    transition: border-color 0.3s, color 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.newsletter_mail form button:hover {
+    color: #fff;
+    background: #000;
+}
+
+.btn.focus,
+.btn:focus {
+    box-shadow: none;
+}
+
+/*****************************
+ * reservation CSS START HERE
+ *****************************/
+
+#reservation {
+    padding: 70px 0;
+    background: url(../images/gl-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.reservation_overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(236, 178, 53, 0.93);
+}
+
+.reservation_header h5 {
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-family: 'Kaushan Script', cursive;
+    padding-bottom: 15px;
+}
+
+.reservation_header h4 {
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.demo {
+    text-align: center;
+}
+
+.reservation_inner {
+    display: inline-block;
+}
+
+.reservation_inner input {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    margin-right: 15px;
+    padding: 7px 45px 7px 15px;
+    font-size: 14px;
+}
+
+.reservation_inner input::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.reservation_inner .submit {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    margin-right: 15px;
+    padding: 7px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: 0;
+    margin-top: 31px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.reservation_inner .submit:hover {
+    color: #fff;
+    border: 1px solid #29272e;
+    background-color: #000;
+}
+
+.reservation_item {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.reservation_item h4 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: 18px;
+    padding-right: 12px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.reservation_item i {
+    position: absolute;
+    color: #fff;
+    font-size: 16px;
+    top: 42px;
+    right: 30px;
+}
+
+.datepicker table tr td.day:hover,
+.datepicker table tr td.day.focused {
+    background: #ecb235;
+    color: #fff;
+}
+
+.datepicker table tr td.active.active {
+    background: #ecb235;
+    color: #fff;
+}
+
+.datepicker .datepicker-switch:hover,
+.datepicker .prev:hover,
+.datepicker .next:hover,
+.datepicker tfoot tr th:hover {
+    background: #ecb235;
+    color: #fff;
+}
+
+li.ui-timepicker-selected,
+.ui-timepicker-list li:hover,
+.ui-timepicker-list .ui-timepicker-selected:hover {
+    background: #ecb235;
+}
+
+.ui-timepicker-wrapper {
+    overflow-y: auto;
+    max-height: 164px;
+    width: 7.5em;
+    background: #fff;
+    border: 0;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+    z-index: 10001;
+    margin: 0;
+}
+
+/*****************************
+ * testimonial CSS START HERE
+ *****************************/
+
+#testimonial {
+    padding: 70px 0;
+}
+
+.testimonial_header h5 {
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #ecb235;
+    font-family: 'Kaushan Script', cursive;
+    padding-bottom: 15px;
+}
+
+.testimonial_header h4 {
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #29272e;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.testimonial_header h4::before {
+    position: absolute;
+    top: 14px;
+    right: 108%;
+    content: '';
+    width: 80px;
+    height: 1px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    background: #ecb235;
+}
+
+.testimonial_header h4::after {
+    position: absolute;
+    top: 14px;
+    left: 108%;
+    content: '';
+    width: 80px;
+    height: 1px;
+    border-radius: 100%;
+    background: #ecb235;
+    border-radius: 100%;
+}
+
+.testimonial_item {
+    text-align: center;
+}
+
+.testimonial_item .tmn_img img {
+    width: 100px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.testimonial_item p {
+    font-size: 14px;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+    padding: 25px 250px;
+}
+
+.testimonial_item h4 {
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #ecb235;
+    padding-bottom: 5px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.testimonial_item h5 {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.testiminial_slider .owl-nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#testimonial .owl-carousel .owl-nav button.owl-prev {
+    color: #fff;
+    font-size: 23px;
+    width: 30px;
+    height: 28px;
+    line-height: 15px;
+    background: #29272e;
+    margin-right: 10px;
+    outline: 0;
+    border-radius: 3px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+#testimonial .owl-carousel .owl-nav button.owl-prev:hover {
+    background: #ecb235;
+    color: #fff;
+}
+
+#testimonial .owl-carousel .owl-nav button.owl-next {
+    color: #fff;
+    font-size: 23px;
+    width: 30px;
+    height: 28px;
+    line-height: 15px;
+    background: #29272e;
+    outline: 0;
+    border-radius: 3px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+#testimonial .owl-carousel .owl-nav button.owl-next:hover {
+    background: #ecb235;
+    color: #fff;
+}
+
+/*****************************
+ * footer CSS START HERE
+ *****************************/
+
+.footer_ovarlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(39, 34, 34, .97);
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background: url(../images/background-food-delicious.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+    position: relative;
+}
+
+.footer_heading p {
+    letter-spacing: .5px;
+    padding: 15px 360px;
+    color: #fff;
+}
+
+.footer_heading h5 {
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-weight: 700;
+    padding: 5px 0 40px 0;
+    color: #FFF;
+}
+
+.contact_info li {
+    padding-bottom: 25px;
+    position: relative;
+}
+
+.contact_info li i {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    color: #000;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.contact_info li p {
+    padding-left: 60px;
+    letter-spacing: .5px;
+}
+
+.contact_info li p a {
+    color: #fff;
+}
+
+.contact_info li p a:hover {
+    color: #ecb235;
+}
+
+.contacat_left h4 {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    letter-spacing: .5px;
+}
+
+.contacat_left .slogan {
+    padding-right: 25%;
+    color: #fff;
+    padding-bottom: 60px;
+}
+
+.timer_info {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    border: double 10px #000;
+    background-clip: padding-box;
+}
+
+.timer_info h4 {
+    font-size: 22px;
+    font-family: 'Kaushan Script', cursive;
+    text-transform: capitalize;
+    color: #ecb235;
+    padding: 25px 0 30px 0;
+}
+
+.time ul li {
+    text-decoration: none;
+    list-style: none;
+    padding-top: 20px;
+}
+
+.time ul li p {
+    color: #fff;
+    letter-spacing: 1px;
+    padding-top: 8px;
+    text-transform: capitalize;
+}
+
+.time ul li .time_heading {
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.timer_call {
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding: 25px 0 30px 0;
+}
+
+/*****************************
+ * copy right CSS START HERE
+ *****************************/
+
+#copy_right_section {
+    background: #1f1f1f;
+    padding: 30px 0;
+}
+
+.ft_social {
+    float: right;
+}
+
+.ft_social li {
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.ft_social li a i {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.ft_social li a i:hover {
+    background: #ecb235;
+    color: #fff;
+}
+
+.copy_right_text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.copy_right_text a {
+    color: #fff;
+}
+
+.copy_right_text a:hover {
+    color: #ecb235;
+}
+
+/*****************************
+ * INDEX CSS END HERE
+ *****************************/
